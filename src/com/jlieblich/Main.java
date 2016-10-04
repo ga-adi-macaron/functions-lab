@@ -10,6 +10,7 @@ public class Main {
         System.out.println(isEven(52));
         userInput();
         typeQuit();
+        System.out.println(fibonacci(10));
     }
 
     public static int stringLength(String str) {
@@ -35,5 +36,23 @@ public class Main {
             return;
         }
         typeQuit();
+    }
+
+    public static int fibonacci(int n) {
+        if(n <= 2) {
+            return 1;
+        } else {
+            return fibonacci(n-1) + fibonacci(n-2);
+        }
+    }
+
+    public static void longestString(String one, String two) {
+        if(one.length() > two.length()) {
+            System.out.println(one);
+        } else if(one.length() == two.length()) {
+            System.out.println("Invalid text");
+        } else {
+            System.out.println(two);
+        }
     }
 }
