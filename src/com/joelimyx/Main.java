@@ -6,16 +6,19 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        System.out.println(isEven(6));
-        //userInput();
-        //typeQuit();
-       // System.out.println(longestString("first", "second"));
+        stringLength("This is a very long sentence. So the number should be large.");
+        System.out.println("This number is Even: " + isEven(6));
+        userInput();
+        typeQuit();
+
+        //Bonus Round
         parameterCount("apple","orange","fint");
+        System.out.println("The longer phrase is "+ longestString("first", "second"));
         fibonacci(10);
     }
 
     public static void stringLength(String phrase) {
-        System.out.println(phrase.length());
+        System.out.println("The length of this phrase is " + phrase.length());
     }
 
     public static boolean isEven(int num1) {
@@ -42,7 +45,7 @@ public class Main {
         int count = 0;
         for (String arg : list)
             count++;
-        System.out.println(count);
+        System.out.println("The length of the parameters is "+count);
     }
 
     public static String longestString(String phrase1, String phrase2) {
